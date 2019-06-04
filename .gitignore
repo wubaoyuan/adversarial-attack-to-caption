@@ -1,0 +1,9 @@
+*.pyc
+cider/
+coco-caption/
+data/images/*
+data/imagenet_weights/*
+data/coco*
+data/dataset*
+useless/
+others/
