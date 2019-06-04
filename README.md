@@ -67,7 +67,7 @@ We proposed two attack methods (GEM and SSVM) on three popular image captioning 
 #                              data/pretrained_models/rl_model-best.pth
 ```
 
-4. The directory `tools/` includes some tools to calculate precision, recall etc. Please read the [README.md](tools/README)
+4. The directory `tools/` includes some tools to calculate precision, recall etc. Please read the [README](tools/README)
 
 ### Citation ###
 
