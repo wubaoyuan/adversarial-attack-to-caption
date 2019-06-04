@@ -15,7 +15,7 @@ This code is implemented based on [self-critical.pytorch](https://github.com/ruo
 
 1. Clone this repo: `git clone --recurtsive https://github.com/xuyan1115/caption-attack.git`
 
-2. Download the pretrained models (CNN part and RNN part) from [here]() and put them into directory `data/pretained_models/`
+2. Download the pretrained models (CNN part and RNN part) from [here](https://drive.google.com/open?id=1KKYac2ktsmYky-Ieyz44bHpfHejpRBTt) and put them into directory `data/pretained_models/`
 
 3. Download the coco2014 dataset(train and val) from [here](http://cocodataset.org/#download). You should put the folder `train2014/` and `val2014/` to the directory `data/images/`
 
