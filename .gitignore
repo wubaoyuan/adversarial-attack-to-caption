@@ -1,6 +1,4 @@
 *.pyc
-cider/
-coco-caption/
 data/images/*
 data/imagenet_weights/*
 data/coco*
