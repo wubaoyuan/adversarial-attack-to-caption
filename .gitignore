@@ -1,6 +1,6 @@
 *.pyc
 data/images/*
-data/pretrained_models/*
+data/pretrained_models/*.pth
 data/coco*
 data/dataset*
 useless/
