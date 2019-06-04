@@ -1,8 +1,7 @@
 *.pyc
 data/images/*
-data/imagenet_weights/*
+data/pretrained_models/*
 data/coco*
 data/dataset*
 useless/
 others/
-model_pth/*
