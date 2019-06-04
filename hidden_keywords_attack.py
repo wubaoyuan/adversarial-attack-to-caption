@@ -166,13 +166,13 @@ def attack(opt):
     recall = 0.
     print('lambda: ', opt.lamda, '  zeta: ', opt.slack)
 
-    with open('wordPOS/noun.txt') as noun_file:
+    with open('data/wordPOS/noun.txt') as noun_file:
         noun = noun_file.read().split()
-    with open('wordPOS/verb.txt') as verb_file:
+    with open('data/wordPOS/verb.txt') as verb_file:
         verb = verb_file.read().split()
-    with open('wordPOS/adjective.txt') as adjective_file:
+    with open('data/wordPOS/adjective.txt') as adjective_file:
         adjective = adjective_file.read().split()
-    with open('wordPOS/adverb.txt') as adverb_file:
+    with open('data/wordPOS/adverb.txt') as adverb_file:
         adverb = adverb_file.read().split()
 
     val_data = loader.val_data[opt.start_num: opt.end_num]

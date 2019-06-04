@@ -25,7 +25,7 @@ def parse_opt():
                     help='some useful data save path')
     parser.add_argument('--pretrain_model', type=str, default='model_pth/sat_model-best.pth', 
                     help='the pretrained model for evaluation')
-    parser.add_argument('--val_data', type=str, default='val_data/val_data.json', 
+    parser.add_argument('--val_data', type=str, default='data/val_data/val_data.json', 
                     help='using fixed validation set')
     # Data input settings
     parser.add_argument('--input_json', type=str, default='data/cocotalk.json',
