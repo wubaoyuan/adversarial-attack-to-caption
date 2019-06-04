@@ -7,3 +7,4 @@ data/coco*
 data/dataset*
 useless/
 others/
+model_pth/*
