@@ -1,17 +1,21 @@
-Attack Image Captioning System (accepted by CVPR2019)
+Attack Image Captioning System
 ====
 
 
-This repository contains the code for how to exact attack image captioning system introduced in following paper
+This repository provides the codes for our CVPR 2019 paper
 
 [Exact Adversarial Attack to Image Captioning via Structured Output Learning with Latent Variables](https://arxiv.org/pdf/1905.04016.pdf)
 
-Yan Xu*, Baoyuan Wu*, Fumin Shen, Yanbo Fan, Yong Zhang, Heng Tao Shen, Wei Liu (* Authors contributed equally)
+Yan Xu*, Baoyuan Wu*, Fumin Shen, Yanbo Fan, Yong Zhang, Heng Tao Shen, Wei Liu (* Equal contribution)
 
+### Dependencies
+* Python2.7
+* Pytorch xxx
 
 ### Prerequisites ###
 
-This code is implemented based on [self-critical.pytorch](https://github.com/ruotianluo/self-critical.pytorch). (Only Support Pyhton2.7)
+<!---
+This code is implemented based on [self-critical.pytorch](https://github.com/ruotianluo/self-critical.pytorch). (Only Support Python2.7) -->
 
 1. Clone this repo: `git clone --recurtsive https://github.com/xuyan1115/caption-attack.git`
 
