@@ -1,4 +1,16 @@
 
+# ./run_target_caption.sh [GPU_ID] [RESULTS_SAVE_DIR] [LOG_DIR] [GEM(0) or SSVM(1)] [STAR_IDX] [END_IDX] \
+#                         [ID] [CAPTION_MODEL] [PRETRAINED_MODEL]
+
+# START_IDX and END_IDX mean the index of val_data (0 ~ 1,000)
+# CAPTION_MODEL is selected from show_tell, show_attend_tell, att2in2
+# PRETRAINED_MODEL: show_tell (data/pretrained_models/st_model-best.pth)
+#                   show_attend_tell (data/pretrained_models/sat_model-best.pth)
+#                   att2in2 (data/pretrained_models/rl_model-best.pth)
+# e.g. ./run_target_caption.sh 0 save_dir/log save_dir/logs/log 1 0 1000 sat show_attend_tell \
+#                              data/pretrained_models/sat_model-best.pth
+
+
 if [ $# -ne 9 ]; then
   echo "invaild parameters..."
   exit 1;

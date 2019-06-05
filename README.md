@@ -11,8 +11,6 @@ Yan Xu*, Baoyuan Wu*, Fumin Shen, Yanbo Fan, Yong Zhang, Heng Tao Shen, Wei Liu 
 
 ### Prerequisites ###
 
-This code is implemented based on [self-critical.pytorch](https://github.com/ruotianluo/self-critical.pytorch). (Only Support Pyhton2.7)
-
 1. Clone this repo: `git clone --recurtsive https://github.com/xuyan1115/caption-attack.git`
 
 2. Download the pretrained models (CNN part and RNN part) from [here](https://drive.google.com/open?id=1KKYac2ktsmYky-Ieyz44bHpfHejpRBTt) and put them into directory `data/pretained_models/`
@@ -33,38 +31,20 @@ We proposed two attack methods (GEM and SSVM) on three popular image captioning 
 
 1. Run `run_target_caption.sh` for attacking targeted complete captions.
 ```
-./run_target_caption.sh [GPU_ID] [RESULTS_SAVE_DIR] [LOG_DIR] [GEM(0) or SSVM(1)] [STAR_IDX] [END_IDX] \
-                        [ID] [CAPTION_MODEL] [PRETRAINED_MODEL]
-                        
-# START_IDX and END_IDX mean the index of val_data (0 ~ 1,000)
-# CAPTION_MODEL is selected from show_tell, show_attend_tell, att2in2
-# PRETRAINED_MODEL: show_tell (data/pretrained_models/st_model-best.pth)
-#                   show_attend_tell (data/pretrained_models/sat_model-best.pth)
-#                   att2in2 (data/pretrained_models/rl_model-best.pth)
-# e.g. ./run_target_caption.sh 0 save_dir/log save_dir/logs/log 1 0 1000 sat show_attend_tell \
-#                              data/pretrained_models/sat_model-best.pth
+./run_target_caption.sh 0 save_dir/log save_dir/logs/log 1 0 1000 sat show_attend_tell \
+                        data/pretrained_models/sat_model-best.pth
 ```
 
 2. Run `run_hidden_keywords.sh` for attacking targeted partial captions with some specific hidden places.
 ```
-./run_hidden_keywords.sh [GPU_ID] [RESULTS_SAVE_DIR] [LOG_DIR] [GEM(0) or SSVM(1)] [NUM_HIDDEN] \
-                        [STAR_IDX] [END_IDX] \
-                        [ID] [CAPTION_MODEL] [PRETRAINED_MODEL]
-                        
-# NUM_HIDDEN: number of hidden places in a sentence, suggest 1, 2, 3
-# e.g. ./run_hidden_keywords.sh 0 save_dir/log save_dir/logs/log 0 2 0 1000 st show_tell \
-#                              data/pretrained_models/st_model-best.pth
+./run_hidden_keywords.sh 0 save_dir/log save_dir/logs/log 0 2 0 1000 st show_tell \
+                         data/pretrained_models/st_model-best.pth
 ```
 
 3. Run `run_observed_keywords.sh` for attacking targeted partial captions with some specific observed places.
 ```
-./run_observed_keywords.sh [GPU_ID] [RESULTS_SAVE_DIR] [LOG_DIR] [GEM(0) or SSVM(1)] [NUM_OBSERVED] \
-                        [STAR_IDX] [END_IDX] \
-                        [ID] [CAPTION_MODEL] [PRETRAINED_MODEL]
-                        
-# NUM_OBSERVED: number of observed places in a sentence, suggest 1, 2, 3
-# e.g. ./run_observed_keywords.sh 0 save_dir/log save_dir/logs/log 1 1 0 1000 rl att2in2 \
-#                              data/pretrained_models/rl_model-best.pth
+./run_observed_keywords.sh 0 save_dir/log save_dir/logs/log 1 1 0 1000 rl att2in2 \
+                           data/pretrained_models/rl_model-best.pth
 ```
 
 4. The directory `tools/` includes some tools to calculate precision, recall etc. Please read the [README](tools/README)

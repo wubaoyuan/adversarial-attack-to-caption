@@ -1,4 +1,13 @@
 
+# ./run_observed_keywords.sh [GPU_ID] [RESULTS_SAVE_DIR] [LOG_DIR] [GEM(0) or SSVM(1)] [NUM_OBSERVED] \
+#                            [STAR_IDX] [END_IDX] \
+#                            [ID] [CAPTION_MODEL] [PRETRAINED_MODEL]
+
+# NUM_OBSERVED: number of observed places in a sentence, suggest 1, 2, 3
+# e.g. ./run_observed_keywords.sh 0 save_dir/log save_dir/logs/log 1 1 0 1000 rl att2in2 \
+#                                 data/pretrained_models/rl_model-best.pth
+
+
 if [ $# -ne 10 ]; then
   echo "invaild parameters..."
   exit 1;
