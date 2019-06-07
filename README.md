@@ -10,11 +10,12 @@ Yan Xu*, Baoyuan Wu*, Fumin Shen, Yanbo Fan, Yong Zhang, Heng Tao Shen, Wei Liu 
 
 ### Dependencies
 * Python2.7
-* Pytorch xxx
+* PyTorch 0.4.0
+* Torchvision 0.2.1
 
 ### Prerequisites ###
 
-1. Clone this repo: `git clone --recurtsive https://github.com/xuyan1115/caption-attack.git`
+1. Clone this repo: `git clone --recurtsive https://github.com/wubaoyuan/adversarial-attack-to-caption.git`
 
 2. Download the pretrained models (CNN part and RNN part) from [here](https://drive.google.com/open?id=1KKYac2ktsmYky-Ieyz44bHpfHejpRBTt) and put them into directory `data/pretained_models/`
 
@@ -51,6 +52,10 @@ We proposed two attack methods (GEM and SSVM) on three popular image captioning 
 ```
 
 4. The directory `tools/` includes some tools to calculate precision, recall etc. Please read the [README](tools/README)
+
+<img src="tools/example.png">
+
+**Figure 1.** Some qualitative examples of adversarial attacks to the Show-Attend-and-Tell model, using GEM method.
 
 ### Citation ###
 
