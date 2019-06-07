@@ -9,7 +9,7 @@ This repository provides the codes for our CVPR 2019 paper
 Yan Xu*, Baoyuan Wu*, Fumin Shen, Yanbo Fan, Yong Zhang, Heng Tao Shen, Wei Liu (* Equal contribution)
 
 ### Dependencies
-* Python2.7
+* Python 2.7
 * PyTorch 0.4.0
 * Torchvision 0.2.1
 
@@ -25,7 +25,8 @@ Yan Xu*, Baoyuan Wu*, Fumin Shen, Yanbo Fan, Yong Zhang, Heng Tao Shen, Wei Liu 
 
 5. Run the following command to filter words and create a vocabulary and discretized caption data, which are dumped into `data/cocotalk.json` and `data/cocotalk_label.h5`, respectively.
   ```
-  python scripts/prepro_labels.py --input_json data/dataset_coco.json --output_json data/cocotalk.json --output_h5 data/cocotalk
+  python scripts/prepro_labels.py --input_json data/dataset_coco.json --output_json data/cocotalk.json \ 
+                                  --output_h5 data/cocotalk
   ```
 
 
