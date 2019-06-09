@@ -1,4 +1,4 @@
-Attack Image Captioning System
+Exact Adversarial Attack to Image Captioning System
 ====
 
 
@@ -32,7 +32,7 @@ Yan Xu*, Baoyuan Wu*, Fumin Shen, Yanbo Fan, Yong Zhang, Heng Tao Shen, Wei Liu 
 
 ### Usage ###
 
-We proposed two attack methods (GEM and SSVM) on three popular image captioning system. (Show-Tell, Show-Attend-Tell, self-critical sequence training(SCST))
+We proposed two attack methods (GEM and SSVM) on three popular image captioning systems, including Show-and-Tell, Show-Attend-and-Tell, and self-critical sequence training(SCST).
 
 1. Run `run_target_caption.sh` for attacking targeted complete captions.
 ```
@@ -60,7 +60,7 @@ We proposed two attack methods (GEM and SSVM) on three popular image captioning 
 
 ### Citation ###
 
-If you find our approach is useful in your research, please consider citing:
+If our work is useful in one's research, please cite our work as follows. 
   
   ```
   @inproceedings{yan2019attack,
