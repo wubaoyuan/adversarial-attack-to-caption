@@ -15,7 +15,7 @@ Yan Xu*, Baoyuan Wu*, Fumin Shen, Yanbo Fan, Yong Zhang, Heng Tao Shen, Wei Liu 
 
 ### Prerequisites ###
 
-1. Clone this repo: `git clone --recurtsive https://github.com/wubaoyuan/adversarial-attack-to-caption.git`
+1. Clone this repo: `git clone --recursive https://github.com/wubaoyuan/adversarial-attack-to-caption.git`
 
 2. Download the pretrained models (CNN part and RNN part) from [here](https://drive.google.com/open?id=1KKYac2ktsmYky-Ieyz44bHpfHejpRBTt) and put them into directory `data/pretained_models/`
 
